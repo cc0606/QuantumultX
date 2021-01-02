@@ -6,6 +6,7 @@
         "0 0 * * * https://raw.githubusercontent.com/cc0606/QuantumultX/main/qqbody.js, tag=QQbody, enabled=false",
         "0 0 * * * https://raw.githubusercontent.com/cc0606/QuantumultX/main/qqtimehd.js, tag=QQtimeheader, enabled=false",
         "0 0 * * * https://raw.githubusercontent.com/cc0606/QuantumultX/main/qqtimeurl.js, tag=QQtimeURL, enabled=false",
+        "0 0 * * * 10 0-23 * * * https://raw.githubusercontent.com/CenBoMin/GithubSync/main/CONGHUA/AutoRead.js, tag=葱花视频, enabled=true",
         "0 0 * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_jdzz.js, tag=京东赚赚, enabled=true",
         "10 8 * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_jdh.js, tag=京东健康, enabled=true",
         "10-50/20 9 * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_watch.js, tag=京东看一看, enabled=true",
