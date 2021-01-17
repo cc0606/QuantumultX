@@ -4,6 +4,7 @@
     "description":"通用脚本合集",
     "task":[
         "0 0 * * * jx_cfdtx.js, tag=财富岛提现, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jxcfd.png, enabled=true",
+        "0 0 * * * https://raw.githubusercontent.com/cc0606/jd_lxk/master/jd_car_exchange.js, tag=京东汽车兑换, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_redPacket.png, enabled=true",
         "8 */1 * * * https://raw.githubusercontent.com/moposmall/Script/main/Me/jx_cfd.js, tag=京喜财富岛,  img-url=https://raw.githubusercontent.com/58xinian/icon/master/jxcfd.png, enabled=true",
         "10 17-23 * * * https://raw.githubusercontent.com/CenBoMin/GithubSync/main/CONGHUA/AutoRead.js, tag=葱花视频, enabled=true",
         "11 0 * * * https://raw.githubusercontent.com/iisams/Scripts/master/liwo/7days.js, tag=梨涡签到领现金, enabled=true, img-url=https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/img/dragonball/5.PNG",
