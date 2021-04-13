@@ -1,3 +1,70 @@
+const $ = new Env('葫芦音乐');
+let status;
+status = (status = ($.getval("hlyystatus") || "1") ) > 1 ? `${status}` : ""; // 账号扩展字符
+const hlyyurlArr = [], hlyyhdArr = [],hlyybodyArr = [],hlyycount = ''
+let times = Math.round(Date.now())
+let hlyyurl = $.getdata('hlyyurl')
+let hlyyhd = $.getdata('hlyyhd')
+let hlyybody = $.getdata('hlyybody')
+let ut = '',id = '',qd='',qdfb='',gg='',sp='',fx='',zs='',tg='',wz='',tgfb=''
+let txsz = ['','BsjB-5WE54sKKCP0kIMORs1WbWzmM5gRg','0r7ipKknU4gqurOo71KH2kPFzkwlohZws','0r7ipKknU4g2s8ACTG4DbU1QFpcUgueU4','pQKf_KdmjH4pS_070l0fhYH0Hs6ltsads','pQKf_KdmjH4hSrW79J7WyU1WbWzmM5gRg'];
+let hltxje = ($.getval('hltxje') || '1');
+let txje = txsz[hltxje]
+
+!(async () => {
+  if (typeof $request !== "undefined") {
+    await hlyyck()
+   
+  } else {hlyyurlArr.push($.getdata('hlyyurl'))
+    hlyyhdArr.push($.getdata('hlyyhd'))
+    hlyybodyArr.push($.getdata('hlyybody'))
+    let hlyycount = ($.getval('hlyycount') || '1');
+  for (let i = 2; i <= hlyycount; i++) {
+    hlyyurlArr.push($.getdata(`hlyyurl${i}`))
+    hlyyhdArr.push($.getdata(`hlyyhd${i}`))
+    hlyybodyArr.push($.getdata(`hlyybody${i}`))
+  }
+    console.log(`------------- 共${hlyyhdArr.length}个账号-------------\n`)
+      for (let i = 0; i < hlyyhdArr.length; i++) {
+        if (hlyyhdArr[i]) {
+          hlyybody = hlyybodyArr[i];
+          hlyyurl = hlyyurlArr[i];
+          hlyyhd = hlyyhdArr[i];
+          $.index = i + 1;
+          console.log(`\n 开始【葫芦音乐${$.index}】`)
+          await hlyylb();
+          await $.wait(1000);
+          await hlyyqd()
+          await $.wait(3000);
+          await hlyyqdfb()
+          await $.wait(3000);
+          await hlyygg()
+          await $.wait(3000);
+          await hlyysp()
+          await $.wait(3000);
+          await hlyyfx()
+          await $.wait(3000);
+          await hlyyfxpj()
+          await $.wait(3000);
+          await hlyytg()
+          await $.wait(3000);
+          await hlyytgfb()
+          await $.wait(3000);
+          await hlyyzslb()
+          await $.wait(3000);
+          await hlyyzs()
+          await $.wait(3000);
+          await hlyyxx()
+          await hlyyme()
+          await hlyytx()
+  }
+}}
+
+})()
+  .catch((e) => $.logErr(e))
+  .finally(() => $.done())
+
+
 //葫芦音乐信息
 function hlyyxx(timeout = 0) {
   return new Promise((resolve) => {
