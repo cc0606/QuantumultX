@@ -32,6 +32,8 @@ let txje = txsz[hltxje]
           hlyyhd = hlyyhdArr[i];
           $.index = i + 1;
           console.log(`\n 开始【葫芦音乐${$.index}】`)
+          await hlyylb();
+          await $.wait(1000);
           await hlyyxx()
           await hlyyme()
           await hlyytx()
@@ -43,6 +45,50 @@ let txje = txsz[hltxje]
   .catch((e) => $.logErr(e))
   .finally(() => $.done())
 
+//葫芦音乐列表
+function hlyylb(timeout = 0) {
+  return new Promise((resolve) => {
+    setTimeout( ()=>{
+      if (typeof $.getdata('hlyyhd') === "undefined") {
+        $.msg($.name,"",'请先获取葫芦音乐数据!😓',)
+        $.done()
+      }
+
+ut = hlyyurl.match(/ut=(.*)/)[1]
+id = hlyyurl.match(/deviceId=(.+?)&/)[1]
+let url = {
+        url : `https://play.gxhuancai.com/hlplay/task/getTaskList?av=1.1.3&ut=${ut}`,
+        headers : JSON.parse(hlyyhd),
+}
+      $.get(url, async (err, resp, data) => {
+        try {
+       
+    const result = JSON.parse(data)
+        if(result.errCode == 00){
+        console.log(`\n〔葫芦音乐〕获取任务列表成功🚬`)    
+qd = result.data.pagelist[0].taskCode 
+qdfb = result.data.pagelist[0].secTaskVoList[0].taskCode
+gg = result.data.pagelist[1].taskCode
+sp = result.data.pagelist[4].taskCode
+fx = result.data.pagelist[5].taskCode
+zs = result.data.pagelist[3].taskCode
+tg = result.data.pagelist[2].taskCode
+tgfb = result.data.pagelist[2].secTaskVoList[0].taskCode      
+
+} else {
+$.log(data)
+console.log('葫芦音乐获取用户信息失败 已停止当前账号运行!')
+
+}
+        } catch (e) {
+          //$.logErr(e, resp);
+        } finally {
+          resolve()
+        }
+      })
+    },timeout)
+  })
+}
 
 //葫芦音乐信息
 function hlyyxx(timeout = 0) {
