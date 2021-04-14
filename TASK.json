@@ -3,6 +3,7 @@
     "name":"Task",
     "description":"通用脚本合集",
     "task":[
+        "0 0 1 1 * https://raw.githubusercontent.com/age174/-/main/mmdzz.js, tag=萌喵大作战无限刷, img-url=https://ae01.alicdn.com/kf/U13a7be18e87942118e4402e22652fd70H.jpg, enabled=false",
         "59 59 5 * * * https://raw.githubusercontent.com/cc0606/QuantumultX/main/hlyytx.js, tag=葫芦音乐提现,enabled=true",
         "40 */1 * * * https://raw.githubusercontent.com/ziye888/JavaScript/main/Task/shuqi.js,tag=书旗小说,enabled=true",
         "0,30 8-23 * * * https://raw.githubusercontent.com/age174/-/main/hlyy.js, tag=葫芦音乐, img-url=https://ae01.alicdn.com/kf/U49d941738c0c41569f7db55825943375f.jpg, enabled=true",
