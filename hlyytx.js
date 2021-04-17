@@ -37,6 +37,10 @@ let txje = txsz[hltxje]
           await hlyyxx()
           await hlyyme()
           await hlyytx()
+          await $.wait(500);
+          await hlyyxx()
+          await hlyyme()
+          await hlyytx()
 
   }
 }}
