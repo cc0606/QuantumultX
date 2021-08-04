@@ -21,7 +21,7 @@
         "0 0 1 1 * https://raw.githubusercontent.com/age174/-/main/mmdzz.js, tag=萌喵大作战无限刷, img-url=https://ae01.alicdn.com/kf/U13a7be18e87942118e4402e22652fd70H.jpg, enabled=false",
         "10 0-23 * * * https://raw.githubusercontent.com/cc0606/JavaScript/main/Task/bububao.js, tag=步步宝",
         "59 59 23 * * * https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_blueCoin.js, tag=东东超市兑换奖品, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jxc.png, enabled=true",
-        "0 0 * * * jx_cfdtx.js, tag=财富岛提现, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jxcfd.png, enabled=true",
+        "59 11,12,23 * * * https://raw.githubusercontent.com/Aaron-lv/sync/jd_scripts/jd_cfdtx.js, tag=京喜财富岛提现, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jxcfd.png, enabled=true",
         "0 0 * * * https://raw.githubusercontent.com/cc0606/jd_lxk/master/jd_car_exchange.js, tag=京东汽车兑换, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_redPacket.png, enabled=true",
         "11 0 * * * https://raw.githubusercontent.com/iisams/Scripts/master/liwo/7days.js, tag=梨涡签到领现金, enabled=true, img-url=https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/img/dragonball/5.PNG",
         "25 0 * * * https://raw.githubusercontent.com/XidNDD/2020scripts/master/ttwbxcxSign.js, tag=天天挖矿小程序, enabled=true, img-url=https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/img/dragonball/19.PNG",
